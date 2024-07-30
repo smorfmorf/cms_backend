@@ -215,7 +215,7 @@ function getTotalPrice() {
 
   return goods.reduce((acc, item) => acc + item.count * item.price, 0);
 }
-
+// ага
 // Проверяем, есть ли файл с товарами, и если нет, то создаем его
 if (!existsSync(DB_GOODS)) writeFileSync(DB_GOODS, "[]", { encoding: "utf8" });
 
